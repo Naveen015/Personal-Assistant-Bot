@@ -1,0 +1,25 @@
+# Core libraries for LLM fine-tuning and inference
+# Unsloth will pull in its specific compatible versions of transformers, torch, etc.
+# For optimal performance, ensure you have an NVIDIA GPU with CUDA drivers installed.
+unsloth[cu121] # or [cu118] depending on your CUDA version. See Unsloth docs for exact match.
+               # If you are not using CUDA, you might need to install unsloth without a specific CUDA suffix,
+               # and ensure you have CPU-compatible PyTorch installed.
+               # Example for generic install (might be slower on GPU without CUDA match):
+               # unsloth
+
+# Other common libraries often used in such projects
+# datasets for handling data (especially JSONL)
+datasets
+# pandas for data manipulation (optional, but good for data prep)
+pandas
+
+# Note: Unsloth typically brings in compatible versions of:
+# transformers
+# torch
+# accelerate
+# peft
+# bitsandbytes
+# trl
+# xformers
+# If you encounter issues, try installing specific versions of these libraries that are
+# explicitly compatible with your Unsloth and PyTorch versions, as per Unsloth's documentation.
