@@ -1,0 +1,16 @@
+# Python environment
+env/
+*.pyc
+__pycache__/
+
+# Operating System files
+.DS_Store # macOS specific
+Thumbs.db # Windows specific
+
+# Editor/IDE files
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+temp/
